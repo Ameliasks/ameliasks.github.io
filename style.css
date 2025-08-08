@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap");
+body {
+  background-color: rgb(251, 163, 67);
+}
+
+div {
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  padding-left: 15px;
+}
+
+main {
+  padding: 10 80%;
+}
+
+h1 {
+  color: rgb(22, 22, 22);
+  margin-left: 20px;
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 74px;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: rgb(22, 22, 22);
+  margin-left: 28px;
+  font-size: 20px; /* Sets base font size for the body */
+  font-weight: 500;
+  font-family: "Brawler", serif;
+  font-style: normal;
+}
+
+h3 {
+  color: rgb(22, 22, 22);
+  font-size: 15px; /* Sets base font size for the body */
+  font-weight: 500;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+p {
+  color: rgb(22, 22, 22);
+  font-family: "Brawler", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bolded {
+  color: rgb(22, 22, 22);
+  font-weight: 700;
+}
+
+::selection {
+  background-color: #e8822e;
+  color: #fff;
+}
+
+a {
+  color: #2e94e8;
+}
