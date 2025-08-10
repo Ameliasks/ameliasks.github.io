@@ -9,6 +9,10 @@ body {
 /* rgb(251,245,229) beige */
 /* rgb(215,124,113) red */
 
+body {
+  margin: 0;
+}
+
 div {
   padding-top: 3rem;
   padding-right: 3rem;
@@ -72,4 +76,10 @@ a {
 
 .spacer {
   height: 10rem;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
 }
