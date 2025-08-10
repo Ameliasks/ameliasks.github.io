@@ -2,25 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  background-color: rgb(251, 163, 67);
+  background-color: rgb(251, 245, 229);
 }
+/* rgb(249,239,191) pastel yellow */
+/* rgb(148,107,55)  dark olive*/
+/* rgb(251,245,229) beige */
+/* rgb(215,124,113) red */
 
 div {
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 45px;
-  padding-left: 15px;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
 }
 
 h1 {
-  color: rgb(22, 22, 22);
+  color: rgb(148, 107, 55);
   margin: 3rem;
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 9rem;
+  font-size: 8rem;
   letter-spacing: -6px;
-  line-height: 0.88;
+  line-height: 0.9;
 }
 
 h2 {
@@ -44,11 +48,12 @@ h3 {
 }
 
 p {
-  color: rgb(22, 22, 22);
-  font-family: "Brawler", serif;
-  font-weight: 300;
-  font-size: 22px;
+  color: rgb(148, 107, 55);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
   font-style: normal;
+  letter-spacing: 1.5px;
 }
 
 .bolded {
@@ -63,4 +68,8 @@ p {
 
 a {
   color: #2e94e8;
+}
+
+.spacer {
+  height: 10rem;
 }
