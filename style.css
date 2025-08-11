@@ -20,6 +20,12 @@ div {
   padding-left: 3rem;
 }
 
+.transparent-bg {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+
 .olive-bg {
   background-color: rgb(148, 107, 55);
   padding-top: 3rem;
@@ -36,6 +42,17 @@ h1 {
   font-size: 8rem;
   letter-spacing: -6px;
   line-height: 0.9;
+}
+
+.h1-red {
+  color: rgb(212, 92, 79);
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: -1px;
+  line-height: 0.9;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -103,6 +120,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .p-red {
@@ -124,7 +142,7 @@ p {
 }
 
 a {
-  color: #2e94e8;
+  color: #cbc58d;
 }
 
 .spacer {
@@ -162,7 +180,6 @@ a {
   content: "";
   display: table;
   clear: both;
-  gap: 50px;
 }
 
 * {
