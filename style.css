@@ -120,7 +120,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .p-red {
@@ -129,6 +129,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
+  line-height: 1.2;
 }
 
 .bolded {
