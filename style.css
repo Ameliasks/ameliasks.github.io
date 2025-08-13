@@ -46,7 +46,7 @@ h1 {
 }
 
 .h1-red {
-  color: rgb(212, 92, 79);
+  color: rgb(207, 96, 52);
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-style: normal;
@@ -88,7 +88,7 @@ h3 {
 }
 
 .h3-red {
-  color: rgb(212, 92, 79);
+  color: rgb(207, 96, 52);
   font-size: 27px;
   font-weight: 300;
   font-family: "Fraunces", serif;
@@ -113,6 +113,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
+  line-height: 1.25;
 }
 
 .p-light {
@@ -125,7 +126,7 @@ p {
 }
 
 .p-red {
-  color: rgb(212, 92, 79);
+  color: rgb(207, 96, 52);
   font-size: 18px; /* Sets base font size for the body */
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
@@ -139,7 +140,7 @@ p {
 }
 
 ::selection {
-  background-color: #e3dfbc;
+  background-color: #eab83c;
   color: #fff;
 }
 
@@ -164,19 +165,20 @@ a {
   padding-bottom: 3rem;
 }
 
+/* Two Column */
 .column {
   float: left;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 0px;
+  align-items: center;
 }
 
 .left {
-  width: 33%;
+  width: 33.33%;
 }
 
 .right {
-  width: 66%;
+  width: 66.66%;
 }
 .row:after {
   content: "";
@@ -187,3 +189,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* ˏˋ°•*⁀➷ ˏˋ°•*⁀➷ ˏˋ°•*⁀➷ */
