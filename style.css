@@ -41,7 +41,8 @@ h1 {
   font-size: 8rem;
   letter-spacing: -6px;
   line-height: 0.9;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .h1-red {
@@ -68,7 +69,7 @@ h2 {
 
 h3 {
   color: rgb(148, 107, 55);
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 300;
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
@@ -78,7 +79,7 @@ h3 {
 
 .h3-light {
   color: rgb(251, 245, 229);
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 300;
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
@@ -88,7 +89,7 @@ h3 {
 
 .h3-red {
   color: rgb(212, 92, 79);
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 300;
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
@@ -108,7 +109,7 @@ h4 {
 
 p {
   color: rgb(148, 107, 55);
-  font-size: 19px; /* Sets base font size for the body */
+  font-size: 18px; /* Sets base font size for the body */
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -116,7 +117,7 @@ p {
 
 .p-light {
   color: rgb(251, 245, 229);
-  font-size: 19px; /* Sets base font size for the body */
+  font-size: 18px; /* Sets base font size for the body */
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -125,7 +126,7 @@ p {
 
 .p-red {
   color: rgb(212, 92, 79);
-  font-size: 19px; /* Sets base font size for the body */
+  font-size: 18px; /* Sets base font size for the body */
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -165,8 +166,8 @@ a {
 
 .column {
   float: left;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   padding-left: 0px;
 }
 
