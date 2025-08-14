@@ -52,6 +52,18 @@ h1 {
   margin-bottom: 0;
 }
 
+.h1-green {
+  color: rgb(160, 154, 100);
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  letter-spacing: -6px;
+  line-height: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
 .h1-light {
   color: rgb(251, 245, 229);
   font-family: "Cormorant", serif;
@@ -131,7 +143,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 .p-light {
@@ -140,7 +152,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 .p-red {
@@ -149,7 +161,7 @@ p {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 .bolded {
@@ -158,8 +170,8 @@ p {
 }
 
 ::selection {
-  background-color: #eab83c;
-  color: #fff;
+  background-color: rgb(227, 223, 188);
+  color: rgb(160, 154, 100);
 }
 
 a {
