@@ -183,6 +183,15 @@ p {
   line-height: 1.4;
 }
 
+.p-lightBold {
+  color: rgb(251, 245, 229);
+  font-size: 18px; /* Sets base font size for the body */
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  line-height: 1.4;
+}
+
 .p-red {
   color: rgb(207, 96, 52);
   font-size: 18px; /* Sets base font size for the body */
@@ -249,6 +258,8 @@ a {
 .parent-container {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #fix-padding {
