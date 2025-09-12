@@ -64,7 +64,8 @@ main {
   padding: 1rem;
 }
 
-:hover {
+#playPauseButton:hover {
+  background-color: #c571c4;
 }
 #timelineProgress {
   flex: 1;
