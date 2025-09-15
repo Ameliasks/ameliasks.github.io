@@ -1,6 +1,6 @@
 //find the elements I want to interact with
 const videoElement = document.querySelector("#mediaPlayer");
-const playPauseButoon = document.querySelector("#playPauseButton");
+const playPauseButton = document.querySelector("#playPauseButton");
 const timeline = document.querySelector("#timelineProgress");
 
 //when js loads, remove defaults controls
