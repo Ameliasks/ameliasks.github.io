@@ -7,7 +7,7 @@
   --color-03: #c6ecae;
   --color-04: #d5573b;
 
-  --border: solid coral 8px;
+  /* --border: solid coral 8px; */
 }
 
 body {
@@ -57,8 +57,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1rem;
+  /* gap: 2rem; */
+  /* gap between elements */
+  padding: 0.8rem 2rem;
+  background-color: white;
 }
 
 #playPauseButton {
@@ -68,6 +70,80 @@ main {
 #playPauseButton:hover {
   background-color: #c571c4;
 }
+
+#volumeIcon {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+}
+
+#fullScreenButton {
+  padding: 1rem;
+}
+
+#fullScreenButton:hover {
+  background-color: #c571c4;
+}
+
+#replayButton {
+  padding: 1rem;
+}
+
+#replayButton:hover {
+  background-color: #c571c4;
+}
+
 #timelineProgress {
-  flex: 1;
+  /* flex: 1; */
+  width: 60%;
+}
+.timeContainer {
+  padding: 0;
+}
+
+#currentTimeFeedback {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: rgb(0, 51, 169);
+}
+
+.slidecontainer {
+  width: 10%; /* Width of the outside container */
+}
+
+/* volume slider*/
+
+.volumeSlider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.volumeSlider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.volumeSlider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }

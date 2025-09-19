@@ -14,13 +14,13 @@
     <header>
       <h1>My Media Player</h1>
     </header>
-
+<!-- 
     <nav>
       <a>Home</a>
       <a>Media Player</a>
       <a>About</a>
       <a>Contact</a>
-    </nav>
+    </nav> -->
 
     <main>
       <section class="mediaPlayerSection">
@@ -33,18 +33,39 @@
         </video>
         <!-- media player controls -->
         <div class="mediaPlayerControlContainer">
+
+          <button id="replayButton">
+            <img id="replayIcon" src="/mediaPlayer/assets/replay-button.png" alt text="Full Screen Icon"></img>
+        </button>
+
+
           <button id="playPauseButton">
             <img id="playPauseIcon" src="/mediaPlayer/assets/play-button.png" alt text="Play Icon"></img>
-       
-          </button>
+       </button>
+
+
+       <button id="volumeIcon">
+        <img id="volumeIcon" src="/mediaPlayer/assets/volume-button.png" alt text="Volume Icon"></img>
+   </button>
+   
+   <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
+  </div>
+  <p class="timeContainer">
+    <span id="currentTimeFeedback">0:00</span>
+  </p> 
+
           <progress id="timelineProgress" max="100" value="0"></progress>
 
           <!-- adding in a time element lets the viewer know how long the video is and their current position in tthe timeline -->
-        <p class="timeContainer">
-          <span id="currentTimeFeedback">0:00</span>
-          /
+       <p class="timeContainer"></p>
           <span id="currentTimeFeedback">4:00</span>
           </p>
+
+
+       <button id="fullScreenButton">
+        <img id="fullScreenIcon" src="/mediaPlayer/assets/fullscreen-button.png" alt text="Full Screen Icon"></img>
+   </button>
         </div>
       </section>
     </main>

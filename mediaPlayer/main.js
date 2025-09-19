@@ -4,6 +4,10 @@ const playPauseButton = document.querySelector("#playPauseButton");
 const timeline = document.querySelector("#timelineProgress");
 const playPauseIcon = document.querySelector("#playPauseIcon");
 const currentTimeText = document.querySelector("#currentTimeFeedback");
+const mediaSource = document.querySelector("mediaSource");
+const replayButton = document.querySelector("#replayButton");
+const fullScreenButton = document.querySelector("#fullScreenButton");
+
 //when js loads, remove defaults controls
 videoElement.removeAttribute("controls");
 
@@ -64,7 +68,7 @@ function updateCurrentTime() {
 
 videoElement.addEventListener("timeupdate", updateTimeline);
 
-// find when I click my timeline and jump to appopriate time
+// find when I click my timeline and jump to appropriate time
 
 timeline.addEventListener("click", jumpToTime);
 
@@ -78,3 +82,34 @@ function jumpToTime(ev) {
   //update the current timeline
   videoElement.currentTime = videoElement.duration * clickPercent;
 }
+
+// user clicks replay button
+// video time is set to 0
+
+function replayVideo() {
+  videoElement.currentTime = 0;
+}
+replayButton.addEventListener("click", replayVideo);
+
+//user clicks fullscreen button
+// video goes to fullscreen
+// clicking on button again returns to original view
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    videoElement.requestFullscreen();
+  } else {
+    document.exitFullscreen?.();
+  }
+}
+fullScreenButton.addEventListener("click", toggleFullScreen);
+
+// user can adjust volume of video with volume slider
+
+let volumeSlider = document.querySelector("#volumeSlider");
+
+videoElement.volume = volumeSlider.value / 100;
+
+volumeSlider.addEventListener("input", function () {
+  videoElement.volume = this.value / 100;
+});
