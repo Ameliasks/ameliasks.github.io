@@ -34,10 +34,17 @@
         <!-- media player controls -->
         <div class="mediaPlayerControlContainer">
           <button id="playPauseButton">
-            ▶
-            <!-- ⏸ -->
+            <img id="playPauseIcon" src="/mediaPlayer/assets/play-button.png" alt text="Play Icon"></img>
+       
           </button>
           <progress id="timelineProgress" max="100" value="0"></progress>
+
+          <!-- adding in a time element lets the viewer know how long the video is and their current position in tthe timeline -->
+        <p class="timeContainer">
+          <span id="currentTimeFeedback">0:00</span>
+          /
+          <span id="currentTimeFeedback">4:00</span>
+          </p>
         </div>
       </section>
     </main>
