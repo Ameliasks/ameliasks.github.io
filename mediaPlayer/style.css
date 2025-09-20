@@ -64,7 +64,9 @@ main {
 }
 
 #playPauseButton {
-  padding: 1rem;
+  padding: 0.8rem;
+  background-color: transparent;
+  border-width: 1.5px;
 }
 
 #playPauseButton:hover {
@@ -78,7 +80,9 @@ main {
 }
 
 #fullScreenButton {
-  padding: 1rem;
+  padding: 0.8rem;
+  background-color: transparent;
+  border-width: 1.5px;
 }
 
 #fullScreenButton:hover {
@@ -86,7 +90,9 @@ main {
 }
 
 #replayButton {
-  padding: 1rem;
+  padding: 0.8rem;
+  background-color: transparent;
+  border-width: 1.5px;
 }
 
 #replayButton:hover {
@@ -96,7 +102,9 @@ main {
 #timelineProgress {
   /* flex: 1; */
   width: 60%;
+  accent-color: #c571c4; /* Sets the accent color to red */
 }
+
 .timeContainer {
   padding: 0;
 }
@@ -106,7 +114,7 @@ main {
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
-  color: rgb(0, 51, 169);
+  color: #c571c4;
 }
 
 .slidecontainer {
@@ -126,12 +134,14 @@ main {
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
 }
+#volumeSlider {
+  accent-color: #c571c4;
+}
 
 .volumeSlider:hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .volumeSlider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
