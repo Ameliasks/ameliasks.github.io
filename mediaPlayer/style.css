@@ -1,28 +1,60 @@
-/* store my custom variables */
-
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Jacquarda+Bastarda+9&family=New+Tegomin&family=Nova+Square&family=Scope+One&family=Shizuru&family=Syne+Mono&display=swap");
 /* my visual direction for this project is ____*/
 :root {
-  --color-01: #777da7;
-  --color-02: #94c9a9;
-  --color-03: #c6ecae;
-  --color-04: #d5573b;
-
-  /* --border: solid coral 8px; */
+  --color-01: #b1b5cd;
+  --color-02: #292645;
+  --color-03: #c571c4;
+  --color-04: #eff2f4;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
   line-height: 1.6;
   background-color: var(--color-01);
-  color: white;
-  gap: 1rem;
+  background-color: var(--color-04);
+}
+
+.title {
+  margin: 3rem;
+  padding-top: 2rem;
+}
+
+.synopsis {
+  width: 35%;
+  display: flex;
+  left: 30%;
+  padding-top: 1.5rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9.2rem;
+  color: var(--color-02);
+  letter-spacing: -5px;
+  line-height: 1.2;
+}
+
+.h1-big {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13rem;
+  color: var(--color-01);
+  letter-spacing: -5px;
+}
+
+h2 {
+  font-family: "Scope One", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--color-02);
+  letter-spacing: 3px;
+  line-height: 1.4;
 }
 
 nav {
@@ -32,6 +64,9 @@ nav {
 
 footer {
   width: 100%;
+  height: 5rem;
+  padding: 5rem 10rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,8 +80,10 @@ main {
 }
 
 .mediaPlayerSection {
-  width: 100%;
-  margin: 0 auto;
+  width: 75%;
+  height: 50rem;
+  /* position: absolute; */
+  margin: 2rem auto;
 }
 
 #mediaPlayer {
@@ -64,6 +101,8 @@ main {
 }
 
 #playPauseButton {
+  width: 3rem;
+  height: auto;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
@@ -80,6 +119,8 @@ main {
 }
 
 #fullScreenButton {
+  width: 3.2rem;
+  height: auto;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
@@ -90,6 +131,8 @@ main {
 }
 
 #replayButton {
+  width: 3.2rem;
+  height: auto;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
@@ -113,12 +156,14 @@ main {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 17px;
+  font-size: 14px;
   color: #c571c4;
+  padding: 1rem;
 }
 
 .slidecontainer {
-  width: 10%; /* Width of the outside container */
+  display: flex;
+  top: 10px;
 }
 
 /* volume slider*/
@@ -136,6 +181,7 @@ main {
 }
 #volumeSlider {
   accent-color: #c571c4;
+  width: 100%;
 }
 
 .volumeSlider:hover {
@@ -156,4 +202,21 @@ main {
   height: 25px; /* Slider handle height */
   background: #04aa6d; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+.div-deco {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  top: 1075px;
+  z-index: -1;
+}
+
+::selection {
+  background-color: var(--color-02);
+  color: var(--color-04);
+}
+
+a {
+  color: var(--color-01);
 }
