@@ -13,10 +13,10 @@ body {
   line-height: 1.6;
   background-color: var(--color-01);
   background-color: var(--color-04);
-  background-image: url("assets/bg.png");
-  background-repeat: no-repeat; /* Prevents image from repeating */
-  background-size: cover; /* Scales image to cover the entire background */
-  background-position: center; /* Centers the image */
+  background-image: url("mediaPlayer/assets/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .title {
@@ -47,7 +47,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 12rem;
-  color: var(--color-03);
+  color: var(--color-01);
   letter-spacing: -5px;
 }
 
@@ -73,9 +73,10 @@ main {
 
 .mediaPlayerSection {
   width: 75%;
-  height: 50rem;
-  /* position: absolute; */
+  height: 44.5rem;
   margin: 2rem auto;
+  border: 0.8rem outset var(--color-04);
+  border-radius: 12px;
 }
 
 #mediaPlayer {
@@ -86,22 +87,31 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 2rem; */
-  /* gap between elements */
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: white;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #eff2f4 10%);
 }
 
 #playPauseButton {
-  width: 3rem;
-  height: 2.8rem;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #caa8de 60%,
+    #c571c4 100%
+  );
   padding: 0.8rem;
-  background-color: transparent;
-  border-width: 1.5px;
+  transition: 0.5s;
+  background-size: auto 150%;
+  color: white;
+  border-radius: 30px;
+  display: block;
+  box-shadow: inset 0px 2px q0px rgba(255, 255, 255, 0.9),
+    0px 10px 15px 5px #fffcfc;
 }
 
 #playPauseButton:hover {
-  background-color: #c571c4;
+  background-position: bottom center;
+  padding: 0.7rem;
 }
 
 #volumeIcon {
@@ -111,34 +121,61 @@ main {
 }
 
 #fullScreenButton {
-  width: 3.2rem;
+  width: 3.3rem;
   height: auto;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
-  margin: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #c9d0f5 60%,
+    #c571c4 100%
+  );
+
+  padding: 0.8rem;
+  transition: 0.5s;
+  background-size: auto 200%;
+  color: white;
+  border-radius: 30px;
+  display: block;
 }
 
 #fullScreenButton:hover {
-  background-color: #c571c4;
+  background-position: bottom center;
+  padding: 0.6rem;
 }
 
 #replayButton {
-  width: 3.2rem;
+  width: 3.3rem;
   height: auto;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #c9d0f5 60%,
+    #c571c4 100%
+  );
+  padding: 0.8rem;
+  transition: 0.5s;
+  background-size: auto 200%;
+  color: white;
+  border-radius: 30px;
+  display: block;
+  margin: 15px;
 }
 
 #replayButton:hover {
-  background-color: #c571c4;
+  background-position: bottom center;
+  padding: 0.6rem;
 }
 
 #timelineProgress {
   /* flex: 1; */
   width: 60%;
-  accent-color: #c571c4; /* Sets the accent color to red */
+  accent-color: #c571c4;
 }
 
 .timeContainer {
@@ -162,14 +199,14 @@ main {
 /* volume slider*/
 
 .volumeSlider {
-  -webkit-appearance: none; /* Override default CSS styles */
+  -webkit-appearance: none;
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 #volumeSlider {
@@ -178,23 +215,23 @@ main {
 }
 
 .volumeSlider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
 }
 
 .volumeSlider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #04aa6d; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
 }
 
 .volumeSlider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #04aa6d; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  cursor: pointer;
 }
 
 .div-deco {
@@ -218,7 +255,7 @@ a {
 footer {
   width: 100%;
   height: 4rem;
-  padding: 4rem 10rem;
+  padding: 10rem 10rem;
   padding-bottom: 8rem;
   display: flex;
   flex-direction: row;

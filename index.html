@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
@@ -12,8 +11,11 @@
   </head>
   <body>
     <header></header>
-
+    <!-- Context -->
+    <!-- When I first watched this video, the graphics and use of electronic dance music really reminded me of 2000s pop culture. I decided to lean into the abstract technology aesthetic and designed background that with that in mind.-->
     <!-- I designed the background image in Adobe Photoshop, and used screenshots from the video. -->
+
+    <!-- Main Content Section -->
     <div class="title"> 
      <h2>PRESENTING...</h2>
       <h1>Nebula Mirage.</h1>
@@ -25,6 +27,8 @@
       <!-- ✴ This video will play audio -->
       <!-- This section will host the media player and the controls bar -->
       <section class="mediaPlayerSection">
+
+        <!-- Media Player -->
         <video id="mediaPlayer" controls>
           <source
             src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
@@ -33,12 +37,14 @@
           This browser does not support the video format.
         </video>
 
-        <!-- Media player controls bar -->
+        <!-- Controls bar -->
         <!-- Having a play/pause button allows the user to control the media playback easily.-->
         <!-- Giving the users control to initiate the video playback is key to the user experience.-->
         <!-- When there are parts of the video art the user might want to have closer look at, or their experience is being interupted by external factors,
          having a button that allows them to pause the video playback iwould be very useful to them.  -->
          <!-- I added an autofocus to the play button, so that the user would be drawn to press it and initiate the video playback. -->
+         <!-- To highlight the button futher, I gave it a different gradient from the other two buttons, and also made it a little larger than the other buttons. -->
+        <!-- I added a gradient for the buttons to emphasise the y2k feeling of the interface. I also added a 'moving gradient' effect using the hover class and background position.-->
 
         <div class="mediaPlayerControlContainer">
           <button id="playPauseButton" autofocus>
@@ -91,8 +97,8 @@
      
       
     </main>
-
-    <footer>
+      <!-- Footer Section -->
+      <footer>
       <h2>&copy; 2025 Media Player Website. All rights reserved.</h2>
       <h2> Icons by <a href="https://icons8.com">Icons8</a></h2>
     </footer>
