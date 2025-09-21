@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Jacquarda+Bastarda+9&family=New+Tegomin&family=Nova+Square&family=Scope+One&family=Shizuru&family=Syne+Mono&display=swap");
 /* my visual direction for this project is ____*/
 :root {
-  --color-01: #b1b5cd;
+  --color-01: #9fa5c8;
   --color-02: #292645;
   --color-03: #c571c4;
   --color-04: #eff2f4;
@@ -10,21 +10,25 @@
 body {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   line-height: 1.6;
   background-color: var(--color-01);
   background-color: var(--color-04);
+  background-image: url("assets/bg.png");
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  background-size: cover; /* Scales image to cover the entire background */
+  background-position: center; /* Centers the image */
 }
 
 .title {
   margin: 3rem;
   padding-top: 2rem;
+  padding-left: 6rem;
 }
 
 .synopsis {
-  width: 35%;
+  width: 60%;
   display: flex;
-  left: 30%;
+  padding-left: 8rem;
   padding-top: 1.5rem;
 }
 
@@ -42,8 +46,8 @@ h1 {
   font-family: "Jacquarda Bastarda 9", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 13rem;
-  color: var(--color-01);
+  font-size: 12rem;
+  color: var(--color-03);
   letter-spacing: -5px;
 }
 
@@ -60,18 +64,6 @@ h2 {
 nav {
   border: var(--border);
   padding: 1rem;
-}
-
-footer {
-  width: 100%;
-  height: 5rem;
-  padding: 5rem 10rem;
-  padding-bottom: 4rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border: var(--border);
 }
 
 main {
@@ -102,7 +94,7 @@ main {
 
 #playPauseButton {
   width: 3rem;
-  height: auto;
+  height: 2.8rem;
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
@@ -124,6 +116,7 @@ main {
   padding: 0.8rem;
   background-color: transparent;
   border-width: 1.5px;
+  margin: 1rem;
 }
 
 #fullScreenButton:hover {
@@ -208,8 +201,9 @@ main {
   display: flex;
   position: absolute;
   margin: 0;
-  top: 1075px;
+  top: 1073px;
   z-index: -1;
+  left: -3px;
 }
 
 ::selection {
@@ -218,5 +212,17 @@ main {
 }
 
 a {
-  color: var(--color-01);
+  color: var(--color-03);
+}
+
+footer {
+  width: 100%;
+  height: 4rem;
+  padding: 3rem 10rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: var(--border);
 }
