@@ -22,8 +22,8 @@
         <li><a href="#" class="noUnderline">Contact</a></li></ul></nav>
     
     <!-- Context chosen: Video Art (Artist Website)-->
-    <!-- When I first watched this video, the psychedelic graphics and use of electronic dance music personally reminded me a lot of 2000s pop culture.
-    I decided to lean into the abstract technology aesthetic from that era for my interface characterisation.
+
+    <!-- When I first watched the provided video, the psychedelic graphics and use of electronic dance music personally reminded me a lot of 2000s pop culture. I decided to lean into the abstract technology aesthetic from that era for my interface characterisation.
     In Adobe Photoshop, I designed a background artwork consisting of lines, geometric shapes, technological elements and screenshots from the video. -->
     <!-- The colour palette for this interface was inspired by the video itself. I colour-picked the magenta shade from the video, and added secondary colours like grey and pale blue which I thought complemeted the magenta well.  -->
 
@@ -54,14 +54,15 @@
 
         <!-- Having a play/pause button allows the user to control the media playback easily.-->
         <!-- Giving the users control to initiate the video playback is key to the user experience.-->
-        <!-- When there are parts of the video art the user might want to have closer look at, or their experience is being interupted by external factors,
-         having a button that allows them to pause the video playback iwould be very useful to them.  -->
+        <!-- When there are parts of the video art the user might want to have closer look at, or their experience is being interupted by external factors,having a button that allows them to pause the video playback iwould be very useful to them.  -->
          <!-- I added an autofocus to the play button, so that the user would be drawn to press it and initiate the video playback. -->
          <!-- To highlight the button futher, I gave it a different gradient from the other two buttons, and also made it a little larger than the other buttons. -->
-        <!-- I added a gradient for the buttons to emphasise the y2k feeling of the interface. I also added a 'moving gradient' effect using the hover class and background position.-->
+        <!-- I added a gradient for the buttons to emphasise the 2000s feeling of the interface. I also added a 'moving gradient' effect using the hover class and background position.-->
 
         <div class="mediaPlayerControlContainer">
-          <button id="playPauseButton" autofocus>
+
+        <!-- play/pause button -->
+        <button id="playPauseButton" autofocus>
         <img id="playPauseIcon" src="/mediaPlayer/assets/play-button.png" alt text="Play Icon"  ></img>
        </button>
 
@@ -71,30 +72,31 @@
        <button id="volumeIcon">
         <img id="volumeIcon" src="/mediaPlayer/assets/volume-button.png" alt text="Volume Icon"></img>
    </button>
-   
+
+      <!-- volume slider -->
    <div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
+  <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
   </div>
+
+    <!-- timeline progress bar -->
   <p class="timeContainer">
-    <span id="currentTimeFeedback">0:00</span>
+  <span id="currentTimeFeedback">0:00</span>
   </p> 
 
           <progress id="timelineProgress" max="100" value="0"></progress>
-
-          <!-- Having a progress timeline lets the viewer know how long the video is and their current position in the timeline. -->
-          
           <p class="timeContainer"></p>
           <span id="currentTimeFeedback">4:00</span>
           </p>
 
-
-          <!-- Having a replay button lets the user easily replay the video art from the beginning without using the timeline-->
-          <!-- Mapping this button at the end of the timeline would make it more intuitive for the users to click on it once they have completed watch the video the first time around. -->
+<!-- replay from start button -->
+ <!-- Having a replay button lets the user easily replay the video art from the beginning without using the timeline-->
+  <!-- Mapping this button at the end of the timeline would make it more intuitive for the users to click on it once they have completed watch the video the first time around. -->
 
           <button id="replayButton">
             <img id="replayIcon" src="/mediaPlayer/assets/replay-button.png" alt text="Full Screen Icon"></img>
         </button>
 
+        <!-- fullscreen button -->
         <!-- Havng a fullscreen button that allows the user to easily enlarge the video would have them better apprecaite the details in the video art -->
         <!-- Viewing the content in fullscreen also enhances focus and engagement through eliminating distrations (on the main interface or on the user's browser)-->
 
@@ -113,6 +115,7 @@
      
       
     </main>
+    
       <!-- Footer Section -->
       <footer>
       <h2>&copy; 2025 Media Player Website. All rights reserved.</h2>
