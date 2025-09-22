@@ -73,7 +73,7 @@ main {
 
 .mediaPlayerSection {
   width: 75%;
-  height: 44.2rem;
+  height: 20%;
   margin: 2rem auto;
   border: 0.8rem outset var(--color-04);
   border-radius: 12px;
