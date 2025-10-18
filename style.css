@@ -3,6 +3,13 @@
 :root {
   --var01: rgb(40, 38, 38);
 }
+body {
+  overflow-x: hidden;
+}
+::selection {
+  background-color: var(--var01);
+  color: white;
+}
 .luxurious-script-regular {
   font-family: "Luxurious Script", cursive;
   font-weight: 400;
@@ -62,5 +69,9 @@ p {
 
 .draggable-item {
   position: absolute;
-  user-drag: none;
+}
+
+#item2 {
+  position: absolute;
+  left: 50%;
 }
