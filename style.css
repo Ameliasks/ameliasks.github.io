@@ -10,11 +10,20 @@ body {
   background-color: var(--var01);
   color: white;
 }
+
+.about {
+  justify-content: center;
+  text-align: center;
+  margin: 10rem 3rem;
+  margin-top: 30rem;
+}
 .luxurious-script-regular {
   font-family: "Luxurious Script", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 200px;
+  line-height: 140px;
+  margin: 0;
 }
 
 .pinyon-script-regular {
@@ -46,7 +55,7 @@ h4 {
   font-family: "Instrument Serif", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 p {
@@ -71,7 +80,14 @@ p {
   position: absolute;
 }
 
+#item1 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
 #item2 {
   position: absolute;
   left: 50%;
+  top: 45%;
 }
