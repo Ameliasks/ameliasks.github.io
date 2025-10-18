@@ -5,6 +5,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 ::selection {
   background-color: var(--var01);
@@ -49,6 +50,8 @@ h3 {
   text-align: center;
   color: var(--var01);
   margin-top: 10rem;
+  z-index: -50;
+  user-select: none;
 }
 
 h4 {
@@ -78,16 +81,68 @@ p {
 
 .draggable-item {
   position: absolute;
+  cursor: grab;
 }
 
 #item1 {
   position: absolute;
   left: 10%;
   top: 20%;
+  z-index: 2;
+  rotate: -30deg;
+}
+
+#item1:active {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  z-index: 40;
 }
 
 #item2 {
   position: absolute;
   left: 50%;
   top: 45%;
+  z-index: 9;
+}
+
+#item2:active {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 40;
+}
+
+#item3 {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  z-index: -1;
+}
+
+#item3:hover {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  z-index: 40;
+}
+
+/* .hover-item {
+
+} */
+
+#vintageCar {
+  position: absolute;
+  left: 72%;
+  top: 50%;
+  z-index: 1;
+  transition: ease 0.4s;
+}
+
+#vintageCar:hover {
+  position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
 }
