@@ -117,7 +117,7 @@ p {
   position: absolute;
   left: 2%;
   top: 5%;
-  z-index: -1;
+  z-index: 1;
 }
 
 #item3:hover {
@@ -127,14 +127,11 @@ p {
   z-index: 40;
 }
 
-/* .hover-item {
+/* for every photo caption, requires 5 styling */
 
-} */
+/* vintageCar */
 
 #vintageCar {
-  position: absolute;
-  left: 72%;
-  top: 50%;
   z-index: 1;
   transition: ease 0.4s;
 }
@@ -146,3 +143,31 @@ p {
   -webkit-filter: grayscale(100%);
   transition: ease 0.8s;
 }
+
+.vintageCarCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 81%;
+  top: 90%;
+}
+
+.container-vintageCar {
+  position: absolute;
+  left: 72%;
+  top: 50%;
+}
+
+.container-vintageCar:hover + .vintageCarCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
+  transition: ease 0.8s;
+}
+
+/*  */
