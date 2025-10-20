@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
   background-color: whitesmoke;
 }
+
+body.noScroll {
+  overflow-y: hidden;
+}
+
 ::selection {
   background-color: var(--var01);
   color: white;
@@ -213,15 +218,55 @@ p {
   transition: ease 0.8s;
 }
 
-.panel {
+#purse {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#purse:hover {
   position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.purseCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 52.5%;
+  top: 145.5%;
+}
+
+.container-purse {
+  position: absolute;
+  left: 55%;
+  top: 95%;
+}
+
+.container-purse:hover + .purseCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
+  transition: ease 0.8s;
+}
+
+.panel {
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
   z-index: 50;
-  background-color: rgba(24, 16, 13, 0.8);
+  background-color: rgba(24, 16, 13, 0.9);
   display: none;
 }
 
