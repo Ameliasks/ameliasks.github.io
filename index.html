@@ -17,7 +17,7 @@
       id="item1"
       src="img/cheeseCake.png"
       draggable="false"
-      width="450px"
+      width="440px"
       height="auto"
       alt="cheesecake"
     />
@@ -37,14 +37,20 @@
       id="item3"
       src="img/acmiDisk.png"
       draggable="false"
-      width="330px"
+      width="310px"
       height="auto"
       alt="ACMI Lens"
     />
 
-    <!-- <div class="draggable-item" id="item3">Item 3</div> -->
-
     <!-- rotate images -->
+
+    <div id="modal01" class="panel" onclick="this.style.display='none'">
+      <button class="closeButton">&times;</button>
+      <div class="animateZoom">
+        <img id="img01" style="max-height: 70%" />
+      </div>
+    </div>
+
     <div class="container-vintageCar">
       <img
         src="img/vintageCar.png"
@@ -52,6 +58,7 @@
         id="vintageCar"
         width="360px"
         height="auto"
+        onclick="onClick(this)"
       />
     </div>
 
@@ -66,6 +73,7 @@
         id="digiDirect"
         width="300px"
         height="auto"
+        onclick="onClick(this)"
       />
     </div>
 

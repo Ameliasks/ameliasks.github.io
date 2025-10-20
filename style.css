@@ -134,6 +134,7 @@ p {
 #vintageCar {
   z-index: 1;
   transition: ease 0.4s;
+  cursor: zoom-in;
 }
 
 #vintageCar:hover {
@@ -175,6 +176,7 @@ p {
 #digiDirect {
   z-index: 1;
   transition: ease 0.4s;
+  cursor: zoom-in;
 }
 
 #digiDirect:hover {
@@ -209,4 +211,42 @@ p {
   opacity: 1;
   transform: rotate(-10deg);
   transition: ease 0.8s;
+}
+
+.panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 50;
+  background-color: rgba(24, 16, 13, 0.8);
+  display: none;
+}
+
+#img01 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.closeButton {
+  float: right;
+  margin: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
 }
