@@ -19,7 +19,6 @@ draggableItems.forEach((item) => {
 
   document.addEventListener("mouseup", () => {
     isDragging = false;
-    item.style.cursor = "grab";
   });
 });
 

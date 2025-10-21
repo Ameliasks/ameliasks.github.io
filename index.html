@@ -10,152 +10,153 @@
   </head>
   <body>
     <header></header>
+    <container>
+      <p class="secret" id="secretText">
+        if you find this, screenshot your layout :P
+      </p>
 
-    <p class="secret" id="secretText">
-      if you find this, screenshot your layout :P
-    </p>
+      <!-- draggable images -->
+      <img
+        class="draggable-item"
+        id="item1"
+        src="img/cheeseCake.png"
+        draggable="false"
+        width="420px"
+        height="auto"
+        alt="cheesecake"
+      />
 
-    <!-- draggable images -->
-    <img
-      class="draggable-item"
-      id="item1"
-      src="img/cheeseCake.png"
-      draggable="false"
-      width="420px"
-      height="auto"
-      alt="cheesecake"
-    />
+      <img
+        class="draggable-item"
+        id="item2"
+        src="img/photobooth.png"
+        draggable="false"
+        width="370px"
+        height="auto"
+        alt="photobooth"
+      />
 
-    <img
-      class="draggable-item"
-      id="item2"
-      src="img/photobooth.png"
-      draggable="false"
-      width="370px"
-      height="auto"
-      alt="photobooth"
-    />
+      <img
+        class="draggable-item"
+        id="item3"
+        src="img/acmiDisk.png"
+        draggable="false"
+        width="300px"
+        height="auto"
+        alt="ACMI Lens"
+      />
 
-    <img
-      class="draggable-item"
-      id="item3"
-      src="img/acmiDisk.png"
-      draggable="false"
-      width="300px"
-      height="auto"
-      alt="ACMI Lens"
-    />
+      <img
+        class="draggable-item"
+        id="item4"
+        src="img/trafficLight.png"
+        draggable="false"
+        width="165px"
+        height="auto"
+        alt="traffic light"
+      />
 
-    <img
-      class="draggable-item"
-      id="item4"
-      src="img/trafficLight.png"
-      draggable="false"
-      width="165px"
-      height="auto"
-      alt="traffic light"
-    />
+      <img
+        class="draggable-item"
+        id="item5"
+        src="img/parking.png"
+        draggable="false"
+        width="182px"
+        height="auto"
+        alt="parking sign"
+      />
 
-    <img
-      class="draggable-item"
-      id="item5"
-      src="img/parking.png"
-      draggable="false"
-      width="182px"
-      height="auto"
-      alt="parking sign"
-    />
+      <img
+        class="draggable-item"
+        id="item6"
+        src="img/giveWaySign.png"
+        draggable="false"
+        width="225px"
+        height="auto"
+        alt="give way to tram sign"
+      />
 
-    <img
-      class="draggable-item"
-      id="item6"
-      src="img/giveWaySign.png"
-      draggable="false"
-      width="225px"
-      height="auto"
-      alt="give way to tram sign"
-    />
+      <img
+        class="draggable-item"
+        id="item7"
+        src="img/bourkeStreet.png"
+        draggable="false"
+        width="370px"
+        height="auto"
+        alt="bourke street sign"
+      />
 
-    <img
-      class="draggable-item"
-      id="item7"
-      src="img/bourkeStreet.png"
-      draggable="false"
-      width="370px"
-      height="auto"
-      alt="bourke street sign"
-    />
+      <!-- rotate images -->
 
-    <!-- rotate images -->
-
-    <div id="modal01" class="panel" onclick="this.style.display='none'">
-      <button class="closeButton">&times;</button>
-      <div class="animateZoom">
-        <img id="img01" style="max-height: 70%" />
+      <div id="modal01" class="panel" onclick="this.style.display='none'">
+        <button class="closeButton">&times;</button>
+        <div class="animateZoom">
+          <img id="img01" style="max-height: 70%" />
+        </div>
       </div>
-    </div>
 
-    <div class="container-vintageCar">
-      <img
-        src="img/vintageCar.png"
-        alt="vintage car"
-        id="vintageCar"
-        width="360px"
-        height="auto"
-        onclick="onClick(this)"
-      />
-    </div>
+      <div class="container-vintageCar">
+        <img
+          src="img/vintageCar.png"
+          alt="vintage car"
+          id="vintageCar"
+          width="360px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
 
-    <div class="vintageCarCaption">Gertrude St., Collingwood</div>
+      <div class="vintageCarCaption">Gertrude St., Collingwood</div>
 
-    <!-- next -->
+      <!-- next -->
 
-    <div class="container-digiDirect">
-      <img
-        src="img/digiDirect.png"
-        alt="man on little bourke street"
-        id="digiDirect"
-        width="300px"
-        height="auto"
-        onclick="onClick(this)"
-      />
-    </div>
+      <div class="container-digiDirect">
+        <img
+          src="img/digiDirect.png"
+          alt="man on little bourke street"
+          id="digiDirect"
+          width="300px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
 
-    <div class="digiDirectCaption">Little Bourke St.,CBD</div>
+      <div class="digiDirectCaption">Little Bourke St.,CBD</div>
 
-    <!-- next -->
+      <!-- next -->
 
-    <div class="container-purse">
-      <img
-        src="img/purse.png"
-        alt="the public purse"
-        id="purse"
-        width="300px"
-        height="auto"
-        onclick="onClick(this)"
-      />
-    </div>
+      <div class="container-purse">
+        <img
+          src="img/purse.png"
+          alt="the public purse"
+          id="purse"
+          width="300px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
 
-    <div class="purseCaption">The Public Purse, Bourke Street Mall, CBD</div>
+      <div class="purseCaption">The Public Purse, Bourke Street Mall, CBD</div>
 
-    <h3>
-      If you don't like<br />
-      the weather,<br />
-      just wait <br />five minutes...
-    </h3>
+      <h3>
+        If you don't like<br />
+        the weather,<br />
+        just wait <br />five minutes...
+      </h3>
 
-    <div class="about">
-      <h1 class="luxurious-script-regular">
-        From Melbourne,
-        <br />
-        with Love
-      </h1>
-      <h4>
-        This is a digital scrapbook of photos I took across Melbourne from 2024
-        to 2025.<br />
-        Although the subjects may look ordinary, to me they encapsulate<br />
-        the beautiful yet subtle charms of everyday life in the city.
-      </h4>
-    </div>
+      <div class="about">
+        <h1 class="luxurious-script-regular">
+          From Melbourne,
+          <br />
+          with Love
+        </h1>
+        <h4>
+          This is a digital scrapbook of photos I took across Melbourne from
+          2024 to 2025.<br />
+          Although the subjects may look ordinary, to me they encapsulate<br />
+          the beautiful yet subtle charms of everyday life in the city.
+        </h4>
+      </div>
+    </container>
   </body>
 </html>

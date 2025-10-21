@@ -8,10 +8,6 @@ body {
   background-color: whitesmoke;
 }
 
-body.noScroll {
-  overflow-y: hidden;
-}
-
 ::selection {
   background-color: var(--var01);
   color: white;
@@ -118,6 +114,7 @@ p {
   left: 12%;
   top: 20%;
   z-index: 40;
+  rotate: -30deg;
 }
 
 #item2 {
