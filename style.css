@@ -74,6 +74,22 @@ p {
   font-size: 16px;
 }
 
+.secret {
+  font-family: "Instrument Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: justify;
+  text-justify: auto;
+  position: absolute;
+  left: 16%;
+  top: 4%;
+  z-index: -50;
+}
+
 .bold {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -91,15 +107,15 @@ p {
 
 #item1 {
   position: absolute;
-  left: 10%;
+  left: 12%;
   top: 20%;
   z-index: 2;
   rotate: -30deg;
 }
 
-#item1:active {
+#item1:hover {
   position: absolute;
-  left: 10%;
+  left: 12%;
   top: 20%;
   z-index: 40;
 }
@@ -111,7 +127,7 @@ p {
   z-index: 9;
 }
 
-#item2:active {
+#item2:hover {
   position: absolute;
   left: 50%;
   top: 45%;
@@ -120,15 +136,72 @@ p {
 
 #item3 {
   position: absolute;
-  left: 2%;
+  left: 1%;
   top: 5%;
   z-index: 1;
 }
 
 #item3:hover {
   position: absolute;
-  left: 2%;
+  left: 1%;
   top: 5%;
+  z-index: 40;
+}
+
+#item4 {
+  position: absolute;
+  left: 82%;
+  top: 25%;
+  z-index: 10;
+}
+
+#item4:hover {
+  position: absolute;
+  left: 82%;
+  top: 25%;
+  z-index: 40;
+}
+
+#item5 {
+  position: absolute;
+  left: 65%;
+  top: 5%;
+  z-index: 9;
+  border: 10px solid #124cbb;
+}
+
+#item5:hover {
+  position: absolute;
+  left: 65%;
+  top: 5%;
+  z-index: 40;
+}
+
+#item6 {
+  position: absolute;
+  left: 40%;
+  top: 65%;
+  z-index: 10;
+}
+
+#item6:hover {
+  position: absolute;
+  left: 40%;
+  top: 65%;
+  z-index: 40;
+}
+
+#item7 {
+  position: absolute;
+  left: 15%;
+  top: 4%;
+  z-index: 10;
+}
+
+#item7:hover {
+  position: absolute;
+  left: 15%;
+  top: 4%;
   z-index: 40;
 }
 

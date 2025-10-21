@@ -29,3 +29,10 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
 }
+
+var secretText = document.getElementById("secretText");
+
+secretText.addEventListener("mouseover", function () {
+  secretText.style.display = "none";
+  secretText.style.transition = "all 1s ease";
+});
