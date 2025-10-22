@@ -365,3 +365,11 @@ p {
   font-weight: 300;
   font-style: normal;
 }
+
+#scrollPayPhone {
+  position: absolute;
+  top: 130%;
+  left: 20%;
+  z-index: 11;
+  rotate: 200deg;
+}

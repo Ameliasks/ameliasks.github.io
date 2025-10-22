@@ -35,3 +35,12 @@ secretText.addEventListener("mouseover", function () {
   secretText.style.display = "none";
   secretText.style.transition = "all 1s ease";
 });
+
+// payphone scroll effect
+
+window.addEventListener("scroll", function () {
+  const rotatingElement = document.getElementById("scrollPayPhone");
+
+  const rotationDegree = window.pageYOffset / 8;
+  rotatingElement.style.transform = `rotate(${rotationDegree}deg)`;
+});
