@@ -90,7 +90,7 @@ p {
 
 #item1 {
   position: absolute;
-  left: 12.5%;
+  left: 12%;
   top: 20%;
   z-index: 2;
   rotate: -30deg;
@@ -98,7 +98,7 @@ p {
 
 #item1:hover {
   position: absolute;
-  left: 12.5%;
+  left: 12%;
   top: 20%;
   z-index: 40;
   rotate: -30deg;
@@ -106,14 +106,14 @@ p {
 
 #item2 {
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 50%;
   z-index: 9;
 }
 
 #item2:hover {
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 50%;
   z-index: 40;
 }
@@ -134,15 +134,15 @@ p {
 
 #item4 {
   position: absolute;
-  left: 82%;
-  top: 25%;
+  left: 86%;
+  top: 20%;
   z-index: 10;
 }
 
 #item4:hover {
   position: absolute;
-  left: 82%;
-  top: 25%;
+  left: 86%;
+  top: 20%;
   z-index: 40;
 }
 
@@ -201,6 +201,22 @@ p {
   left: 70%;
   top: 0%;
   z-index: 40;
+}
+
+#item9 {
+  position: absolute;
+  left: 70%;
+  top: 24%;
+  z-index: 4;
+  opacity: 92%;
+}
+
+#item9:hover {
+  position: absolute;
+  left: 70%;
+  top: 24%;
+  z-index: 40;
+  opacity: 92%;
 }
 
 /* for every photo caption, requires 5 styling */
@@ -353,13 +369,13 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 10%;
-  top: 170%;
+  top: 164%;
 }
 
 .container-charlie {
   position: absolute;
   left: 5%;
-  top: 120%;
+  top: 114%;
 }
 
 .container-charlie:hover + .charlieCaption {
@@ -495,8 +511,8 @@ p {
 
 #scrollCoffee {
   position: absolute;
-  top: 80%;
-  left: 10%;
+  top: 82%;
+  left: 16%;
   z-index: 11;
   rotate: -2deg;
 }

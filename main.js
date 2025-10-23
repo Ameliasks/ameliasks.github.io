@@ -50,6 +50,6 @@ window.addEventListener("scroll", function () {
   const rotationDegreeTwo = window.pageYOffset / 4.5;
   let scrollPosition = window.scrollY;
   rotatingElementTwo.style.transform = `translateX(${
-    scrollPosition * 0.56
-  }px)translateY(${scrollPosition * 0.905}px)rotate(${rotationDegreeTwo}deg)`;
+    scrollPosition * 0.5
+  }px)translateY(${scrollPosition * 0.9}px)rotate(${rotationDegreeTwo}deg)`;
 });
