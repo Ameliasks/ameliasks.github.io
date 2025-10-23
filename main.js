@@ -36,11 +36,20 @@ secretText.addEventListener("mouseover", function () {
   secretText.style.transition = "all 1s ease";
 });
 
-// payphone scroll effect
+// scroll effect
 
 window.addEventListener("scroll", function () {
   const rotatingElement = document.getElementById("scrollPayPhone");
+  let scrollPayPhone = window.scrollY;
+  rotatingElement.style.transform = `translateY(${scrollPayPhone * 0.2}px)`;
+});
 
-  const rotationDegree = window.pageYOffset / 8;
-  rotatingElement.style.transform = `rotate(${rotationDegree}deg)`;
+window.addEventListener("scroll", function () {
+  const rotatingElementTwo = document.getElementById("scrollCoffee");
+
+  const rotationDegreeTwo = window.pageYOffset / 4.5;
+  let scrollPosition = window.scrollY;
+  rotatingElementTwo.style.transform = `translateX(${
+    scrollPosition * 0.56
+  }px)translateY(${scrollPosition * 0.905}px)rotate(${rotationDegreeTwo}deg)`;
 });

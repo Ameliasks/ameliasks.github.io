@@ -17,7 +17,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 10rem 3rem;
-  margin-top: 50rem;
+  margin-top: 80rem;
 }
 .luxurious-script-regular {
   font-family: "Luxurious Script", cursive;
@@ -26,20 +26,7 @@ body {
   font-size: 200px;
   line-height: 140px;
   margin: 0;
-}
-
-.pinyon-script-regular {
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 200px;
-}
-
-.great-vibes-regular {
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 200px;
+  margin-left: -1rem;
 }
 
 h3 {
@@ -103,7 +90,7 @@ p {
 
 #item1 {
   position: absolute;
-  left: 12%;
+  left: 12.5%;
   top: 20%;
   z-index: 2;
   rotate: -30deg;
@@ -111,7 +98,7 @@ p {
 
 #item1:hover {
   position: absolute;
-  left: 12%;
+  left: 12.5%;
   top: 20%;
   z-index: 40;
   rotate: -30deg;
@@ -120,27 +107,27 @@ p {
 #item2 {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   z-index: 9;
 }
 
 #item2:hover {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   z-index: 40;
 }
 
 #item3 {
   position: absolute;
-  left: 1%;
+  left: 0.5%;
   top: 5%;
   z-index: 1;
 }
 
 #item3:hover {
   position: absolute;
-  left: 1%;
+  left: 0.5%;
   top: 5%;
   z-index: 40;
 }
@@ -161,7 +148,7 @@ p {
 
 #item5 {
   position: absolute;
-  left: 65%;
+  left: 62%;
   top: 5%;
   z-index: 9;
   border: 10px solid #124cbb;
@@ -169,7 +156,7 @@ p {
 
 #item5:hover {
   position: absolute;
-  left: 65%;
+  left: 62%;
   top: 5%;
   z-index: 40;
 }
@@ -199,6 +186,20 @@ p {
   position: absolute;
   left: 15%;
   top: 4%;
+  z-index: 40;
+}
+
+#item8 {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+  z-index: 4;
+}
+
+#item8:hover {
+  position: absolute;
+  left: 70%;
+  top: 0%;
   z-index: 40;
 }
 
@@ -235,7 +236,7 @@ p {
 
 .container-vintageCar {
   position: absolute;
-  left: 72%;
+  left: 74%;
   top: 50%;
 }
 
@@ -328,6 +329,126 @@ p {
   transition: ease 0.8s;
 }
 
+#charlie {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#charlie:hover {
+  position: absolute;
+  transform: rotate(-10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.charlieCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 10%;
+  top: 170%;
+}
+
+.container-charlie {
+  position: absolute;
+  left: 5%;
+  top: 120%;
+}
+
+.container-charlie:hover + .charlieCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(-10deg);
+  transition: ease 0.8s;
+}
+
+#door {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#door:hover {
+  position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.doorCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 74%;
+  top: 211%;
+}
+
+.container-door {
+  position: absolute;
+  left: 74%;
+  top: 158%;
+}
+
+.container-door:hover + .doorCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
+  transition: ease 0.8s;
+}
+
+#arc {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#arc:hover {
+  position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.arcCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 77.5%;
+  top: 153%;
+}
+
+.container-arc {
+  position: absolute;
+  left: 80%;
+  top: 114%;
+}
+
+.container-arc:hover + .arcCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
+  transition: ease 0.8s;
+}
+
 .panel {
   position: fixed;
   left: 0;
@@ -339,7 +460,6 @@ p {
   background-color: rgba(24, 16, 13, 0.9);
   display: none;
 }
-
 #img01 {
   position: absolute;
   left: 0;
@@ -368,8 +488,15 @@ p {
 
 #scrollPayPhone {
   position: absolute;
-  top: 130%;
-  left: 20%;
+  top: 152%;
+  left: 8%;
   z-index: 11;
-  rotate: 200deg;
+}
+
+#scrollCoffee {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  z-index: 11;
+  rotate: -2deg;
 }

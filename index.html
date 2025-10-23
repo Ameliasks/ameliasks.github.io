@@ -10,6 +10,13 @@
   </head>
   <body>
     <header></header>
+
+    <!-- From Melbourne, with love. 
+     My chosen context and action for assignment 3 is a digital scrapbook of photos 
+     I have taken across Melbourne over the last year. Users can interact with some 
+     photos by dragging them around and others by hovering over them to unveil 
+     animations and/or descriptions. -->
+
     <container>
       <p class="secret" id="secretText">
         if you find this, screenshot your layout :P
@@ -81,7 +88,17 @@
         id="item7"
         src="img/bourkeStreet.png"
         draggable="false"
-        width="370px"
+        width="365px"
+        height="auto"
+        alt="bourke street sign"
+      />
+
+      <img
+        class="draggable-item"
+        id="item8"
+        src="img/tramDocklands.png"
+        draggable="false"
+        width="345px"
         height="auto"
         alt="bourke street sign"
       />
@@ -138,6 +155,51 @@
 
       <div class="purseCaption">The Public Purse, Bourke Street Mall, CBD</div>
 
+      <!-- next -->
+
+      <div class="container-charlie">
+        <img
+          src="img/charlie.png"
+          alt="lucy loves charlie flowers"
+          id="charlie"
+          width="300px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
+
+      <div class="charlieCaption">Lucy Loves Charlie Flowers, Hawthorn</div>
+
+      <!-- next -->
+
+      <div class="container-door">
+        <img
+          src="img/door.png"
+          alt="cafe entrance"
+          id="door"
+          width="300px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
+
+      <div class="doorCaption">The Lawson Grove Shop, South Yarra</div>
+
+      <!-- next -->
+
+      <div class="container-arc">
+        <img
+          src="img/arc.png"
+          alt="GPO walkway"
+          id="arc"
+          width="210px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
+
+      <div class="arcCaption">General Post Office, Melbourne</div>
+
       <h3>
         If you don't like<br />
         the weather,<br />
@@ -149,9 +211,19 @@
         id="scrollPayPhone"
         src="img/payPhone.png"
         draggable="false"
-        width="240px"
+        width="220px"
         height="auto"
         alt="bourke street sign"
+      />
+
+      <img
+        class="scroll-item"
+        id="scrollCoffee"
+        src="img/coffee.png"
+        draggable="false"
+        width="400px"
+        height="auto"
+        alt="coffee"
       />
 
       <div class="about">
@@ -161,9 +233,9 @@
           with Love
         </h1>
         <h4>
-          This is a digital scrapbook of photos I took across Melbourne from
-          2024 to 2025.<br />
-          Although the subjects may look ordinary, to me they encapsulate<br />
+          This is a digital scrapbook of photos I took across Melbourne and the
+          inner suburbs in <br />2024 and 2025. Although the subjects may look
+          ordinary, to me they encapsulate<br />
           the beautiful yet subtle charms of everyday life in the city.
         </h4>
       </div>
