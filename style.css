@@ -318,7 +318,7 @@ p {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  left: 10%;
+  left: 9.5%;
   top: 164%;
 }
 
@@ -439,7 +439,7 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 41.5%;
-  top: 179%;
+  top: 178.5%;
 }
 
 .container-crossing {
@@ -455,6 +455,45 @@ p {
   transition: ease 0.8s;
 }
 
+#slay {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#slay:hover {
+  position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.slayCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 56%;
+  top: 188%;
+}
+
+.container-slay {
+  position: absolute;
+  left: 55%;
+  top: 151%;
+}
+
+.container-slay:hover + .slayCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
+  transition: ease 0.8s;
+}
 .panel {
   position: fixed;
   left: 0;
