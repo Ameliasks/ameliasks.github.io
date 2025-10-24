@@ -110,12 +110,6 @@ p {
   z-index: 9;
 }
 
-#item2:hover {
-  position: absolute;
-  left: 48%;
-  top: 50%;
-}
-
 #item3 {
   position: absolute;
   left: 0.5%;
@@ -123,25 +117,11 @@ p {
   z-index: 1;
 }
 
-#item3:hover {
-  position: absolute;
-  left: 0.5%;
-  top: 5%;
-  z-index: 40;
-}
-
 #item4 {
   position: absolute;
   left: 86%;
   top: 20%;
   z-index: 10;
-}
-
-#item4:hover {
-  position: absolute;
-  left: 86%;
-  top: 20%;
-  z-index: 40;
 }
 
 #item5 {
@@ -152,25 +132,11 @@ p {
   border: 10px solid #124cbb;
 }
 
-#item5:hover {
-  position: absolute;
-  left: 62%;
-  top: 5%;
-  z-index: 40;
-}
-
 #item6 {
   position: absolute;
   left: 40%;
   top: 65%;
   z-index: 10;
-}
-
-#item6:hover {
-  position: absolute;
-  left: 40%;
-  top: 65%;
-  z-index: 40;
 }
 
 #item7 {
@@ -180,25 +146,11 @@ p {
   z-index: 10;
 }
 
-#item7:hover {
-  position: absolute;
-  left: 15%;
-  top: 4%;
-  z-index: 40;
-}
-
 #item8 {
   position: absolute;
   left: 70%;
   top: 0%;
   z-index: 4;
-}
-
-#item8:hover {
-  position: absolute;
-  left: 70%;
-  top: 0%;
-  z-index: 40;
 }
 
 #item9 {
@@ -209,12 +161,12 @@ p {
   opacity: 92%;
 }
 
-#item9:hover {
+#item10 {
   position: absolute;
-  left: 70%;
-  top: 24%;
-  z-index: 40;
-  opacity: 92%;
+  left: 56%;
+  top: 0%;
+  z-index: 10;
+  rotate: 180deg;
 }
 
 /* for every photo caption, requires 5 styling */
@@ -463,6 +415,46 @@ p {
   transition: ease 0.8s;
 }
 
+#crossing {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#crossing:hover {
+  position: absolute;
+  transform: rotate(-10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.crossingCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 41.5%;
+  top: 179%;
+}
+
+.container-crossing {
+  position: absolute;
+  left: 30%;
+  top: 124%;
+}
+
+.container-crossing:hover + .crossingCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(-10deg);
+  transition: ease 0.8s;
+}
+
 .panel {
   position: fixed;
   left: 0;
@@ -470,7 +462,7 @@ p {
   top: 0;
   bottom: 0;
   margin: auto;
-  z-index: 50;
+  z-index: 100;
   background-color: rgba(24, 16, 13, 0.9);
   display: none;
 }
@@ -511,6 +503,6 @@ p {
   position: absolute;
   top: 82%;
   left: 16%;
-  z-index: 11;
+  z-index: 60;
   rotate: -2deg;
 }
