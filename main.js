@@ -1,23 +1,33 @@
+let layer = 10;
+
 let draggableItems = document.querySelectorAll(".draggable-item");
 
 draggableItems.forEach((item) => {
   let isDragging = false;
-  let offsetX, offsetY;
+  let dragStartX, dragStartY, dragObjLeft, dragObjTop;
 
   item.addEventListener("mousedown", (e) => {
     isDragging = true;
-    offsetX = e.clientX - item.getBoundingClientRect().left;
-    offsetY = e.clientY - item.getBoundingClientRect().top;
-    item.style.cursor = "grabbing";
+    // offsetX = e.pageX - item.getBoundingClientRect().left;
+    // offsetY = e.pageY - item.getBoundingClientRect().top;
+    dragStartX = e.pageX;
+    dragStartY = e.pageY;
+    dragObjLeft = e.target.offsetLeft;
+    dragObjTop = e.target.offsetTop;
+    layer += 1;
+    item.style.zIndex = layer;
   });
 
-  document.addEventListener("mousemove", (e) => {
+  window.addEventListener("mousemove", (e) => {
+    console.log(isDragging);
     if (!isDragging) return;
-    item.style.left = e.clientX - offsetX + "px";
-    item.style.top = e.clientY - offsetY + "px";
+    // item.style.left = e.pageX - offsetX + "px";
+    // item.style.top = e.pageY - offsetY + "px";
+    item.style.left = dragObjLeft + e.pageX - dragStartX + "px";
+    item.style.top = dragObjTop + e.pageY - dragStartY + "px";
   });
 
-  document.addEventListener("mouseup", () => {
+  window.addEventListener("mouseup", () => {
     isDragging = false;
   });
 });

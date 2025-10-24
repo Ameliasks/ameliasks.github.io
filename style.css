@@ -100,7 +100,6 @@ p {
   position: absolute;
   left: 12%;
   top: 20%;
-  z-index: 40;
   rotate: -30deg;
 }
 
@@ -115,7 +114,6 @@ p {
   position: absolute;
   left: 48%;
   top: 50%;
-  z-index: 40;
 }
 
 #item3 {
