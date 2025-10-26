@@ -63,3 +63,15 @@ window.addEventListener("scroll", function () {
     scrollPosition * 0.5
   }px)translateY(${scrollPosition * 0.85}px)rotate(${rotationDegreeTwo}deg)`;
 });
+
+var swapImage = document.getElementById("item12");
+let isFirstImage = true;
+
+swapImage.addEventListener("click", function () {
+  if (isFirstImage) {
+    swapImage.src = "img/photoStrip.png";
+  } else {
+    swapImage.src = "img/poloroid.png";
+  }
+  isFirstImage = !isFirstImage;
+});
