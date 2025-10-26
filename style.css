@@ -12,7 +12,9 @@ body {
   background-color: var(--var01);
   color: white;
 }
-
+.container {
+  height: 2000px;
+}
 .about {
   justify-content: center;
   text-align: center;
@@ -50,11 +52,15 @@ h4 {
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: -50;
+  margin-top: 4rem;
 }
 
 .secret {
@@ -69,7 +75,7 @@ p {
   text-justify: auto;
   position: absolute;
   left: 16%;
-  top: 4%;
+  top: 2%;
   z-index: -50;
 }
 
@@ -167,6 +173,14 @@ p {
   top: 0%;
   z-index: 10;
   rotate: 180deg;
+}
+
+#item11 {
+  position: absolute;
+  left: 0%;
+  top: 280%;
+  z-index: 10;
+  rotate: -20deg;
 }
 
 /* for every photo caption, requires 5 styling */
@@ -542,6 +556,6 @@ p {
   position: absolute;
   top: 82%;
   left: 16%;
-  z-index: 60;
+  z-index: 10;
   rotate: -2deg;
 }

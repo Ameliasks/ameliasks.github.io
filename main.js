@@ -57,9 +57,9 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   const rotatingElementTwo = document.getElementById("scrollCoffee");
 
-  const rotationDegreeTwo = window.pageYOffset / 4.5;
+  const rotationDegreeTwo = window.pageYOffset / 4.7;
   let scrollPosition = window.scrollY;
   rotatingElementTwo.style.transform = `translateX(${
     scrollPosition * 0.5
-  }px)translateY(${scrollPosition * 0.9}px)rotate(${rotationDegreeTwo}deg)`;
+  }px)translateY(${scrollPosition * 0.85}px)rotate(${rotationDegreeTwo}deg)`;
 });
