@@ -17,10 +17,36 @@
      photos by dragging them around and others by hovering over them to unveil 
      animations and/or descriptions. -->
 
+    <!-- In this project, I will be using a mix of interactions that include drag, scroll and hover.
+     I decided to implement these interactions as I wanted to make the interface fun and unpredictable
+     for the user. Since the subjects of my photographs are ordinary, I hope that these
+     interactions will elevate the interest of the users. -->
+
+    <!-- The selection of photographs I have chosen are the ones that best capture what I like
+     about living in Melbourne. The contradiction of busy streets and quiet spaces, clean and cluttered.
+     This is also why I have chosen to make the landing page a little messy and random. -->
+
+    <!-- The text that lies behind the draggable objects aims to work as a user learnability function 
+      - abeit an abstract one. I have borrowed this tactic from everything.can.be.scanned (https://ecbscanned.com/)
+      When interacting with that site, I realised that making the user curious to see the full title
+      will teach them to move the images away to reveal it. Since I am not providing my user with any
+      instruction, this is a subtle way I am hinting to them how they should be interacting with it. -->
+
+    <!-- When the user hovers over any of the draggable elements, they will see the grab cursor, and
+     that would hopefully hint to them that they are interactive. I have also created a function
+     that will constantly overlay the images over one another when clicked, by constantly updating the z-index
+     of their common css class. This is so the user has more flexibility to play around and customise their layouts.  -->
+
     <container>
       <p class="secret" id="secretText">
         if you find this, screenshot your layout :P
       </p>
+
+      <!-- Over here I added a secret task for the user to screenshot the layout that they
+       have customised. I hope that this will incentivise them to spend more time on the site
+       playing around with the elements to create their own unique designs. Since I don't want
+       this text to get in the way of their designs, I have created a function for it to disappear
+       once the user hovers over it. -->
 
       <!-- draggable images -->
       <img
@@ -123,7 +149,14 @@
         alt="fish soy sauce"
       />
 
-      <!-- rotate images -->
+      <!-- gallery images -->
+
+      <!-- With some chaos, there must be some order to balance it. In this section of the
+       interface, photographs are organised in columns for more comfortable viewing. Since I
+       would like the users to be able to focus on each photo with less distraction, I have included
+       a fullscreen function when they click on the photograph. They can easily escape fullscreen mode
+       by clicking anywhere else on the screen. I customised the cursor for these photographs to be the zoom-in cursor,
+       so that the users know to click on it and trigger fullscreen mode. There is also a hover effect that turns each photo black and white, rotates it, and shows its caption.-->
 
       <div id="modal01" class="panel" onclick="this.style.display='none'">
         <button class="closeButton">&times;</button>
@@ -263,13 +296,22 @@
         />
       </div>
 
-      <div class="laundromatCaption">Unknown Alley, Fitzroy</div>
+      <div class="laundromatCaption">The Brunswick Laundromat, Brunswick</div>
 
       <h3>
         If you don't like<br />
         the weather,<br />
         just wait <br />five minutes...
       </h3>
+
+      <!-- There are two elements with scroll animations: the payphone that moves straight downwards,
+       and the coffee that floats downwards across the screen. These scroll animations aim to increase
+       the time the user spends on the site by interacting with them. The coffee rotating across
+       the screen might seem a little random and funny, but that is pretty much the point. I think
+       creating this point of unexpectedness will make the site more interesting for the user. 
+       And as this is Melbourne we are talking about, I think the coffee deserves the spotlight.
+       The cursor for these elements have been set to not-allowed, so that the user will know that they
+       cannot be dragged.-->
 
       <img
         class="scroll-item"
@@ -290,6 +332,10 @@
         height="auto"
         alt="coffee"
       />
+
+      <!-- This is the about section that provides some context about the site and its purpose.
+ From a portfolio standpoint and also from a user learnability standpoint, I think it is important
+ for the user to have information about how these images were curated for this interface.-->
 
       <div class="about">
         <h1 class="luxurious-script-regular">
@@ -324,6 +370,15 @@
           height="auto"
           alt="hotel poloroid"
         />
+
+        <!-- This poloroid element is both clickable and hoverable. Upon each click, the user can
+         toggle the image on the poloroid. -->
+
+        <!-- Although these draggable elements are at the bottom of the page, they can be dragged
+         to any space on the interface, and likewise for the group of draggable elements at the top.
+         This was achieved with window.addEventListener and the removal of getBoundingClientRect(), as I learnt the hard way when document.addEventListener
+         created an invisible barrier that prevented the hoverable elements from moving past a certain
+         y-index. -->
       </div>
     </container>
   </body>
