@@ -69,7 +69,7 @@ let isFirstImage = true;
 
 swapImage.addEventListener("click", function () {
   if (isFirstImage) {
-    swapImage.src = "img/photoStrip.png";
+    swapImage.src = "img/poloroid2.png";
   } else {
     swapImage.src = "img/poloroid.png";
   }

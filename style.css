@@ -19,7 +19,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 0 3rem;
-  margin-top: 80rem;
+  margin-top: 81rem;
   overflow: hidden;
   padding-left: 3rem;
 }
@@ -464,13 +464,13 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 41.5%;
-  top: 178.5%;
+  top: 176.5%;
 }
 
 .container-crossing {
   position: absolute;
   left: 30%;
-  top: 124%;
+  top: 122%;
 }
 
 .container-crossing:hover + .crossingCaption {
@@ -519,6 +519,47 @@ p {
   transform: rotate(10deg);
   transition: ease 0.8s;
 }
+
+#laundromat {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#laundromat:hover {
+  position: absolute;
+  transform: rotate(-10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.laundromatCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 41.5%;
+  top: 219.5%;
+}
+
+.container-laundromat {
+  position: absolute;
+  left: 19.5%;
+  top: 183%;
+}
+
+.container-laundromat:hover + .laundromatCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(-10deg);
+  transition: ease 0.8s;
+}
+
 .panel {
   position: fixed;
   left: 0;
