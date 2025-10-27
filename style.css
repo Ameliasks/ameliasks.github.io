@@ -184,7 +184,7 @@ p {
 
 #item11 {
   position: absolute;
-  left: 5%;
+  left: 1%;
   top: 255%;
   z-index: 10;
   rotate: 20deg;
@@ -476,7 +476,7 @@ p {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  left: 41.5%;
+  left: 44.5%;
   top: 177.5%;
 }
 
@@ -690,6 +690,10 @@ p {
   font-style: normal;
 }
 
+.closeButton-hover {
+  color: rgba(255, 255, 255, 0.395);
+}
+
 #scrollPayPhone {
   position: absolute;
   top: 152%;
@@ -705,4 +709,8 @@ p {
   z-index: 10;
   rotate: -2deg;
   cursor: not-allowed;
+}
+
+.draggable-item {
+  cursor: grab;
 }

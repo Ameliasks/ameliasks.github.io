@@ -166,7 +166,9 @@
        would like the users to be able to focus on each photo with less distraction, I have included
        a fullscreen function when they click on the photograph. They can easily escape fullscreen mode
        by clicking anywhere else on the screen. I customised the cursor for these photographs to be the zoom-in cursor,
-       so that the users know to click on it and trigger fullscreen mode. There is also a hover effect that turns each photo black and white, rotates it, and shows its caption.-->
+       so that the users know to click on it and trigger fullscreen mode. There is also a hover effect that turns each 
+       photo black and white, rotates it, and shows its caption, provided as a form of feedback to the users that those
+       photos are interactive.-->
 
       <!-- For all the photos, I downsized them before importing into Visual Studio Code to
         ensure the site loads smoothly. I also colour corrected all the images so that they
@@ -280,7 +282,7 @@
         />
       </div>
 
-      <div class="crossingCaption">Collins Street, Melbourne</div>
+      <div class="crossingCaption">Collins Street, CBD</div>
 
       <!-- next -->
 
@@ -391,7 +393,7 @@
           This is a digital scrapbook of images I took across Melbourne and the
           inner suburbs in <br />2024 and 2025. Although the subjects may look
           ordinary, to me they encapsulate<br />
-          the beautiful yet subtle charms of everyday life in the city.
+          the beautiful yet subtle charms of everyday life in Melbourne.
         </h4>
         <p>CREATED BY AMELIA SIEW</p>
 
@@ -400,7 +402,7 @@
           id="item11"
           src="img/lawsonStamp.png"
           draggable="false"
-          width="250px"
+          width="240px"
           height="auto"
           alt="lawson grove shop stamp"
         />
@@ -423,9 +425,9 @@
 
         <!-- Although these draggable elements are at the bottom of the page, they can be dragged
          to any space on the interface, and likewise for the group of draggable elements at the top.
-         This was achieved with window.addEventListener and the removal of getBoundingClientRect(), as I learnt the hard way when document.addEventListener
-         created an invisible barrier that prevented the hoverable elements from moving past a certain
-         y-index. -->
+         This was achieved with window.addEventListener and the removal of getBoundingClientRect(), 
+         as I learnt the hard way when document.addEventListener created an invisible barrier that 
+         prevented the hoverable elements from moving past a certain y-index. -->
 
         <!-- If this prototype was to be developed into a bigger project, it would
           probably include more photography in the scrolling gallery section.
