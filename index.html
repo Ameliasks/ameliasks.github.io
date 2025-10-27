@@ -149,6 +149,16 @@
         alt="fish soy sauce"
       />
 
+      <img
+        class="draggable-item"
+        id="item13"
+        src="img/matcha.png"
+        draggable="false"
+        width="200px"
+        height="auto"
+        alt="matcha"
+      />
+
       <!-- gallery images -->
 
       <!-- With some chaos, there must be some order to balance it. In this section of the
@@ -157,6 +167,10 @@
        a fullscreen function when they click on the photograph. They can easily escape fullscreen mode
        by clicking anywhere else on the screen. I customised the cursor for these photographs to be the zoom-in cursor,
        so that the users know to click on it and trigger fullscreen mode. There is also a hover effect that turns each photo black and white, rotates it, and shows its caption.-->
+
+      <!-- For all the photos, I downsized them before importing into Visual Studio Code to
+        ensure the site loads smoothly. I also colour corrected all the images so that they
+        look consistent next to one another.-->
 
       <div id="modal01" class="panel" onclick="this.style.display='none'">
         <button class="closeButton">&times;</button>
@@ -298,6 +312,36 @@
 
       <div class="laundromatCaption">The Brunswick Laundromat, Brunswick</div>
 
+      <!-- next -->
+
+      <div class="container-bar">
+        <img
+          src="img/bar.png"
+          alt="pellegrini's espresso bar"
+          id="bar"
+          width="210px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
+
+      <div class="barCaption">Pellegrini's Espresso Bar, CBD</div>
+
+      <!-- next -->
+
+      <div class="container-bicycle">
+        <img
+          src="img/bicycle.png"
+          alt="bicycle"
+          id="bicycle"
+          width="210px"
+          height="auto"
+          onclick="onClick(this)"
+        />
+      </div>
+
+      <div class="bicycleCaption">McLean Alley, CBD</div>
+
       <h3>
         If you don't like<br />
         the weather,<br />
@@ -371,14 +415,27 @@
           alt="hotel poloroid"
         />
 
+        <span class="clickMe" id="prompt">Click Me!</span>
+
         <!-- This poloroid element is both clickable and hoverable. Upon each click, the user can
-         toggle the image on the poloroid. -->
+         toggle the image on the poloroid. To signal to the user that it has the special toggle
+         feature, I added a 'click me' prompt that disappears once the user clicks on it.-->
 
         <!-- Although these draggable elements are at the bottom of the page, they can be dragged
          to any space on the interface, and likewise for the group of draggable elements at the top.
          This was achieved with window.addEventListener and the removal of getBoundingClientRect(), as I learnt the hard way when document.addEventListener
          created an invisible barrier that prevented the hoverable elements from moving past a certain
          y-index. -->
+
+        <!-- If this prototype was to be developed into a bigger project, it would
+          probably include more photography in the scrolling gallery section.
+          In this prototype, I inserted an adequate number of photos to show
+          how the column layout would look like, but I think having more photos
+          would make this interface feel more like a photography exhibition. 
+          And I think merging the concepts of a digital scrapbook and an exhibition would
+          be a suting prospect, as the purpose of the site was to showcase the photos and use
+          interactivity to make it more interesting.
+    -->
       </div>
     </container>
   </body>

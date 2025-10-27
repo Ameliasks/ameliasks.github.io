@@ -19,7 +19,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 0 3rem;
-  margin-top: 81rem;
+  margin-top: 84rem;
   overflow: hidden;
   padding-left: 3rem;
 }
@@ -81,12 +81,17 @@ p {
   z-index: -50;
 }
 
-.bold {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+.clickMe {
+  font-family: "Luxurious Script", cursive;
+  font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 42px;
+  color: #5554545b;
+  position: absolute;
+  rotate: -20deg;
+  top: 308%;
+  left: 13.5%;
+  z-index: 20;
 }
 
 /* images */
@@ -192,6 +197,14 @@ p {
   top: 270%;
   z-index: 9;
   rotate: -20deg;
+}
+
+#item13 {
+  position: absolute;
+  left: 75%;
+  top: 74%;
+  z-index: 4;
+  rotate: 20deg;
 }
 
 /* for every photo caption, requires 5 styling */
@@ -344,13 +357,13 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 9.5%;
-  top: 164%;
+  top: 150%;
 }
 
 .container-charlie {
   position: absolute;
   left: 5%;
-  top: 114%;
+  top: 100.5%;
 }
 
 .container-charlie:hover + .charlieCaption {
@@ -464,13 +477,13 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 41.5%;
-  top: 176.5%;
+  top: 177.5%;
 }
 
 .container-crossing {
   position: absolute;
   left: 30%;
-  top: 122%;
+  top: 123%;
 }
 
 .container-crossing:hover + .crossingCaption {
@@ -544,19 +557,99 @@ p {
   visibility: hidden;
   opacity: 0;
   left: 33%;
-  top: 220.5%;
+  top: 221.5%;
 }
 
 .container-laundromat {
   position: absolute;
   left: 19.5%;
-  top: 183%;
+  top: 184%;
 }
 
 .container-laundromat:hover + .laundromatCaption {
   visibility: visible;
   opacity: 1;
   transform: rotate(-10deg);
+  transition: ease 0.8s;
+}
+
+#bar {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#bar:hover {
+  position: absolute;
+  transform: rotate(-10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.barCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 7%;
+  top: 179%;
+}
+
+.container-bar {
+  position: absolute;
+  left: 5%;
+  top: 156%;
+}
+
+.container-bar:hover + .barCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(-10deg);
+  transition: ease 0.8s;
+}
+
+#bicycle {
+  z-index: 1;
+  transition: ease 0.4s;
+  cursor: zoom-in;
+}
+
+#bicycle:hover {
+  position: absolute;
+  transform: rotate(10deg);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: ease 0.8s;
+}
+
+.bicycleCaption {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--var01);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 58.5%;
+  top: 230%;
+}
+
+.container-bicycle {
+  position: absolute;
+  left: 55%;
+  top: 192%;
+}
+
+.container-bicycle:hover + .bicycleCaption {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(10deg);
   transition: ease 0.8s;
 }
 

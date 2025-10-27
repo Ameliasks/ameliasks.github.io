@@ -74,4 +74,7 @@ swapImage.addEventListener("click", function () {
     swapImage.src = "img/poloroid.png";
   }
   isFirstImage = !isFirstImage;
+
+  var clickMeText = document.querySelector("#prompt");
+  clickMeText.style.display = "none";
 });
