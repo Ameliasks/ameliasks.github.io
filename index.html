@@ -17,13 +17,15 @@
      photos by dragging them around and others by hovering over them to unveil 
      animations and/or descriptions. -->
 
-    <!-- In this project, I will be using a mix of interactions that include drag, scroll and hover.
-     I decided to implement these interactions as I wanted to make the interface fun and unpredictable
-     for the user. Since the subjects of my photographs are ordinary, I hope that these
-     interactions will elevate the interest of the users. -->
+    <!-- Scrapbooking is the highly personalised craft of documenting memories by creatively 
+     arranging photos, journaling, and mementos. In this project, I will be using a mix of 
+     interactions that include drag, scroll and hover, so that users can personalise the interface
+     as if it were a real scrapbook. Since the subjects of my photographs are ordinary, 
+     I hope that these unpredictable and fun  interactions will elevate the interest towards the photos 
+     I have included. -->
 
     <!-- The selection of photographs I have chosen are the ones that best capture what I like
-     about living in Melbourne. The contradiction of busy streets and quiet spaces, clean and cluttered.
+     about living in Melbourne. The contradiction of busy streets and quiet spaces, class and chaotism.
      This is also why I have chosen to make the landing page a little messy and random. -->
 
     <!-- The text that lies behind the draggable objects aims to work as a user learnability function 
@@ -35,7 +37,8 @@
     <!-- When the user hovers over any of the draggable elements, they will see the grab cursor, and
      that would hopefully hint to them that they are interactive. I have also created a function
      that will constantly overlay the images over one another when clicked, by constantly updating the z-index
-     of their common css class. This is so the user has more flexibility to play around and customise their layouts.  -->
+     of their common css class. This is for better usability where the user has more flexibility to play around and 
+     customise the interface to their preference.  -->
 
     <container>
       <p class="secret" id="secretText">
@@ -171,8 +174,9 @@
        photos are interactive.-->
 
       <!-- For all the photos, I downsized them before importing into Visual Studio Code to
-        ensure the site loads smoothly. I also colour corrected all the images so that they
-        look consistent next to one another.-->
+        ensure the site loads smoothly for good usability. I also colour corrected all the images so that they
+        look consistent next to one another. Some of the photos were also edited to look like poloroids, stamps
+        and photo strips, to eenhance the 'scrapbook' style of the interface.-->
 
       <div id="modal01" class="panel" onclick="this.style.display='none'">
         <button class="closeButton">&times;</button>
@@ -357,7 +361,22 @@
        creating this point of unexpectedness will make the site more interesting for the user. 
        And as this is Melbourne we are talking about, I think the coffee deserves the spotlight.
        The cursor for these elements have been set to not-allowed, so that the user will know that they
-       cannot be dragged.-->
+       cannot be dragged. This interaction was inspired by the Treep Tours website (https://www.treeptours.com/)
+       that implemented scroll effects in several different ways that encourage the user to continue 
+       scrolling down the page. -->
+
+      <!-- It was also the Treep Tours website that showed me the importance of curating the correct images
+        of my interface. Although the images may seem random, when composited together on the interface they
+        set the tone of fun, quirkiness and authenticity, which is representative of their brand as a whole.
+        As I limiting the number of photos I will be displaying on the site, it is important for me to select
+        the right photos with a consistent tone and messaging. -->
+
+      <!-- In this instance, I want to portray Melbourne as a city of contradictions, a mix of
+         class and chaotism, but present it in a way that feels peaceful and even melancholic. The contradiction aspect 
+         is highlighted by the layout: the landing page is fun and messy, while the scrolling gallery is clean and organised. 
+         And the use of the serif typeface and black and white filter adds to the classy and melancholic element of it. 
+         The colour gradng of the images are purposefully warm, and there has been bloom and grain added to them, to accentuate 
+         the peaceful and comforting feeling of the interface.-->
 
       <img
         class="scroll-item"
@@ -435,9 +454,8 @@
           how the column layout would look like, but I think having more photos
           would make this interface feel more like a photography exhibition. 
           And I think merging the concepts of a digital scrapbook and an exhibition would
-          be a suting prospect, as the purpose of the site was to showcase the photos and use
-          interactivity to make it more interesting.
-    -->
+          be a suitable prospect, as the purpose of the site was to showcase the photos and use
+          interactivity to make them more interesting and immersive for an audience.-->
       </div>
     </container>
   </body>
