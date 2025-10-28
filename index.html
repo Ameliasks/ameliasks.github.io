@@ -168,15 +168,18 @@
        interface, photographs are organised in columns for more comfortable viewing. Since I
        would like the users to be able to focus on each photo with less distraction, I have included
        a fullscreen function when they click on the photograph. They can easily escape fullscreen mode
-       by clicking anywhere else on the screen. I customised the cursor for these photographs to be the zoom-in cursor,
-       so that the users know to click on it and trigger fullscreen mode. There is also a hover effect that turns each 
-       photo black and white, rotates it, and shows its caption, provided as a form of feedback to the users that those
+       by clicking anywhere else on the screen. The fullscreen of the z-index has been set to 100,
+       so that it will always appear above all elements, this is a precautionary measure since the
+       z-index of the draggable elements will continue to increase the more the user interacts with them.
+       I set the cursor for these photographs to be the zoom-in cursor, so that the users know to click on 
+       it and trigger fullscreen mode. There is also a hover effect that turns each photo black and white, 
+       rotates it, and shows its caption, provided as a form of feedback to the users that those
        photos are interactive.-->
 
       <!-- For all the photos, I downsized them before importing into Visual Studio Code to
         ensure the site loads smoothly for good usability. I also colour corrected all the images so that they
         look consistent next to one another. Some of the photos were also edited to look like poloroids, stamps
-        and photo strips, to eenhance the 'scrapbook' style of the interface.-->
+        and photo strips, to enhance the 'scrapbook' style of the interface.-->
 
       <div id="modal01" class="panel" onclick="this.style.display='none'">
         <button class="closeButton">&times;</button>
@@ -436,6 +439,16 @@
           alt="hotel poloroid"
         />
 
+        <img
+          class="draggable-item"
+          id="item14"
+          src="img/film.png"
+          draggable="false"
+          width="270px"
+          height="auto"
+          alt="film"
+        />
+
         <span class="clickMe" id="prompt">Click Me!</span>
 
         <!-- This poloroid element is both clickable and hoverable. Upon each click, the user can
@@ -455,7 +468,8 @@
           would make this interface feel more like a photography exhibition. 
           And I think merging the concepts of a digital scrapbook and an exhibition would
           be a suitable prospect, as the purpose of the site was to showcase the photos and use
-          interactivity to make them more interesting and immersive for an audience.-->
+          interactivity to make them more interesting and immersive for an audience. I would probably
+          also add more draggable items for the users to play around with. -->
       </div>
     </container>
   </body>
