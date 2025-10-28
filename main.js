@@ -43,7 +43,6 @@ var secretText = document.getElementById("secretText");
 
 secretText.addEventListener("mouseover", function () {
   secretText.style.display = "none";
-  secretText.style.transition = "all 1s ease";
 });
 
 // scroll effect

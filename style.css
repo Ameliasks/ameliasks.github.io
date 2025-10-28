@@ -216,6 +216,15 @@ p {
   opacity: 95%;
 }
 
+#item15 {
+  position: absolute;
+  left: 79%;
+  top: 220%;
+  z-index: 4;
+  rotate: 20deg;
+  opacity: 98%;
+}
+
 /* for every photo caption, requires 5 styling */
 
 /* vintageCar */
