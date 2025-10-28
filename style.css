@@ -717,6 +717,7 @@ p {
   top: 152%;
   left: 8%;
   z-index: 11;
+  cursor: not-allowed;
 }
 
 #scrollCoffee {
